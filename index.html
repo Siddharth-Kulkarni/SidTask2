@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio website</title>
+        <link rel="Stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Img/SK Logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header"><span class="h">Home</span></a></li>
+                <li><a href="#about"><span class="h">About</span></a></li>
+                <li><a href="#portfolio"><span class="h">Portfolio</span></a></li>
+                <li><a href="#Contact"><span class="h">Contact</span></a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi,I'm <span>Siddharth Kulkarni</span></h1>
+            <p>Welcome to my personal portfolio website!</p>
+        </div>
+    </div>
+</div>
+<!-- --------------------about----------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Img/sidP.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1> 
+                <p>Greetings everyone!I am Siddharth Kulkarni ,I am currently pursuing my Engineering in NHCE.I am passionate about Coding,Web design,Web devolopment.I am a hardworker and a dedicated person.I trust the process and always try to be consistent!I have interests in many sports like Cricket,Badminton etc.I spend my free times by listening to songs ,watching movies and doing some other activities. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents avtive-tab" id="skills">
+                   
+                        <li>Coding langages like C,C++,Python,Java </li>
+                        <li>Designing Web/App interfaces</li>
+                        <li>Web App Development </li>
+                
+                    
+                </div>
+                <div class="tab-contents" id="education">
+                    
+                        <li>I have completed SSLC in Nivedita School.</li>
+                        <li>I have completed PUC in Vignaan college.</li>
+                        <li>Currently studying engineering in NHCE.</li>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Recent Works</h1>
+        <div class="Work-list">
+            <div class="Work">
+            <img src="Img/website.png">
+            <div class="layer">
+                <h3>Recreating website</h3>
+                <p>This website showcase my creativity and knowledge I gained in my ongoing internship .</p>
+                <a href="https://siddharth-kulkarni.github.io/sid/"><i class="fas fa-external-links-alt"></i></a>
+               
+            </div>
+        </div>
+        <div class="Work">
+        <img src="Img/portfolio.png">
+            <div class="layer">
+                <h3>Portfolio website</h3>
+                <p>I did this website for Building my resume and for learning some new concepts. </p>
+                <a href="#"><i class="fas fa-external-links-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -------------contact---------- -->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="Contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p class="c"><i class="fas fa-paper-plane"></i>     siddharthsk2170@gmail.com</p>
+                <p class="c"><i class="fas fa-phone-square-alt"></i>   9353766752</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/siddharth-kulkarni-aa7716262/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="Contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ SiddharthKulkarni<i class="fas fa.heart"></i> | 2023 All rights reserved.</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
